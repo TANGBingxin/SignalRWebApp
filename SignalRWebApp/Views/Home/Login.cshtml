@@ -1,0 +1,39 @@
+﻿<div id="login">
+    <form action="/Home/Submit">
+        <table>
+            <tr>
+                <td>Username: </td>
+                <td><input placeholder="Please enter username" name="name"/></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input placeholder="Please enter password" name="password" type="password" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="operation">
+                        <button id="submit" type="submit">Log in</button>
+                        <button id="cancel">Cancel</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<style>
+    table{
+        margin:200px auto;
+        border-collapse: separate;
+        border-spacing:revert;
+    }
+
+    .operation{
+        display:flex;
+        justify-content:space-evenly;
+    }
+
+    button{
+        width:80px;
+    }
+</style>
